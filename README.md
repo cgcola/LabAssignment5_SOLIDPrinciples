@@ -166,7 +166,6 @@ public class OrderManager {
     }
 }
 
-// --- The Composition Root ---
 public class OrderTest {
     public static void main(String[] args) {
         PriceCalculator priceCalculator = new OrderCalculation();
@@ -183,3 +182,4 @@ public class OrderTest {
 ---
 
 ## UML Diagram:
+<img width="5492" height="2466" alt="image" src="https://github.com/user-attachments/assets/c97d61e9-7f6c-4bb2-aa71-b3a61020eb0f" />
