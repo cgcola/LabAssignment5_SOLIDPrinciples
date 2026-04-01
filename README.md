@@ -75,7 +75,7 @@ public class OrderTest {
 ### Refactored Code (Adheres to SOLID):
 
 ```java
-// --- Interfaces (ISP) ---
+// Interfaces (ISP)
 public interface PriceCalculator {
     double calculateTotal(double price, int quantity);
 }
@@ -89,7 +89,7 @@ public interface EmailNotifier {
     void sendEmailNotification(String email);
 }
 
-// --- Concrete Implementations (SRP) ---
+// Concrete Implementations (SRP)
 public class OrderCalculation implements PriceCalculator {
     @Override
     public double calculateTotal(double price, int quantity) {
@@ -120,7 +120,7 @@ public class EmailNotification implements EmailNotifier {
     }
 }
 
-// --- The Orchestrator (DIP) ---
+// Orchestrator (DIP)
 public class OrderManager {
     private PriceCalculator priceCalculator;
     private OrderPlacer orderPlacer;
